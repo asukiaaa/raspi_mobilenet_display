@@ -1,7 +1,7 @@
 import io, picamera, pygame, sys, os
 import argparse
-import numpy as np
 import cv2
+import numpy as np
 from cv2 import dnn
 from pygame.locals import *
 os.environ["SDL_FBDEV"] = "/dev/fb1"
@@ -40,12 +40,6 @@ screen = pygame.display.set_mode((160, 124), 0, 32)
 screen.fill(0)
 
 basicfont = pygame.font.SysFont(None, 15)
-text = basicfont.render('Hello World!', True, (255, 255, 255))
-textrect = text.get_rect()
-#textrect.centerx = screen.get_rect().centerx
-textrect.left = screen.get_rect().centerx
-textrect.centery = screen.get_rect().centery
-screen.blit(text, textrect)
 
 # run the game loop
 while True:
@@ -83,7 +77,6 @@ while True:
     print("name: ", classNames[maxClassId])
     resultText = basicfont.render(classNames[maxClassId], True, (255, 255, 255))
     textrect = resultText.get_rect()
-    #textrect.centerx = screen.get_rect().centerx
     textrect.left = img.get_width()
     textrect.centery = screen.get_rect().centery
     screen.blit(resultText, textrect)
