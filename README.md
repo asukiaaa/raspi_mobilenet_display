@@ -30,6 +30,8 @@ sudo python3 /home/pi/gitprojects/raspi_mobilenet_display/mobilenet_picamera_dis
 ```
 
 # References
+- [Raspberry Pi ZeroとPicameraと0.96インチLCDで物体認識装置を作ってみた](http://asukiaaa.blogspot.jp/2018/03/raspberry-pizeropicamera096lcd.html)
 - [shicai/MobileNet-Caffe](https://github.com/shicai/MobileNet-Caffe)
 - [asukiaaa/py_opencv_mobilenet_practice](https://github.com/asukiaaa/py_opencv_mobilenet_practice)
 - [asukiaaa/raspi_tft_display_camera](https://github.com/asukiaaa/raspi_tft_display_camera)
+- [Capturing to an OpenCV object | Picamera](https://picamera.readthedocs.io/en/release-1.13/recipes2.html#capturing-to-an-opencv-object)
